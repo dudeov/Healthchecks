@@ -1,6 +1,16 @@
-Hostname,Chassis,Enabled\Disabled,Status
-Low_SHOW_TASK_KB-PE-CUP-12_MX104.txt,mx104,Enabled,NotStarted/NotStarted/NotStarted/NotStarted/NotStarted
-Low_SHOW_TASK_autovo-cr-1-MX240_MX240.txt,mx240,Enabled,NotStarted/NotStarted/NotStarted/NotStarted
-High_SHOW_TASK_ADL-MX240-BBR-185_re0_MX240.txt,mx240,Enabled,Complete/Complete/Complete/Complete/Complete
-Low_SHOW_TASK_spb-ats428-pe1-mx480_MX480.txt,mx480,Disabled,Status is not available
-High_SHOW_TASK_KB-P2_MX960.txt,mx960,Enabled,Complete/Complete/Complete/Complete/InProgress
+Hostname,Chassis,Enabled\Disabled,Status,RE_status
+High_SHOW_TASK_AKS-IRR-1_re0_MX240.txt,mx240,Disabled,Status is not available,Dual
+High_SHOW_TASK_RST-MX480-BBR-20_re0_MX480.txt,mx480,Disabled,Status is not available,Single
+High_SHOW_TASK_KRD-MX960-BBR-39_re0_MX960.txt,mx960,Disabled,Status is not available,Dual
+High_SHOW_TASK_SPB-LRR-1_re0_M10I.txt,m10i,Disabled,Status is not available,Dual
+High_SHOW_TASK_MSK-IRR-1_re0_MX240.txt,mx240,Disabled,Status is not available,Dual
+High_SHOW_TASK_KRD-MX480-BGW-89_re0_MX480.txt,mx480,Enabled,Complete/Complete/Complete/Complete,Dual
+High_SHOW_TASK_SMR-IRR-1_re0_MX240.txt,mx240,Disabled,Status is not available,Dual
+High_SHOW_TASK_ADL-MX240-BBR-185_re0_MX240.txt,mx240,Enabled,Complete/Complete/Complete/Complete/Complete,Dual
+High_SHOW_TASK_MSK-PE-MX960-2_re0_MX960.txt,mx960,Enabled,Complete/Complete/Complete/Complete/Complete/Complete/Complete,Dual
+High_SHOW_TASK_AKS-P-T4000-2_re0_T4000.txt,t4000,Enabled,Complete/Complete/Complete/Complete/Complete,Dual
+High_SHOW_TASK_NNV-PE-MX960-2_re0_MX960.txt,mx960,Enabled,Complete/Complete/Complete/Complete/Complete/Complete,Dual
+High_SHOW_TASK_SMR-PE-MX960-2_re1_MX960.txt,mx960,Enabled,Complete/Complete/Complete/Complete/Complete/Complete/Complete/Complete,Dual
+High_SHOW_TASK_ADL-MX240-BBR-184_re0_MX240.txt,mx240,Enabled,Complete/Complete/Complete/Complete/Complete,Dual
+High_SHOW_TASK_AKS-MX960-BBR-16_re0_MX960.txt,mx960,Disabled,Status is not available,Dual
+High_SHOW_TASK_NNV-PE-MX960-1_re1_MX960.txt,mx960,Enabled,Complete/Complete/Complete/Complete/Complete/Complete/Complete,Dual

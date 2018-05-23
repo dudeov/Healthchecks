@@ -1,0 +1,159 @@
+
+SPB-LRR-1_re0> show chassis routing-engine | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/10.4R8/junos">
+    <route-engine-information xmlns="http://xml.juniper.net/junos/10.4R8/junos-chassis">
+        <route-engine>
+            <slot>0</slot>
+            <mastership-state>master</mastership-state>
+            <mastership-priority>master (default)</mastership-priority>
+            <status>OK</status>
+            <temperature junos:celsius="25">25 degrees C / 77 degrees F</temperature>
+            <cpu-temperature junos:celsius="28">28 degrees C / 82 degrees F</cpu-temperature>
+            <memory-dram-size>1536</memory-dram-size>
+            <memory-buffer-utilization>27</memory-buffer-utilization>
+            <cpu-user>19</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>7</cpu-system>
+            <cpu-interrupt>1</cpu-interrupt>
+            <cpu-idle>73</cpu-idle>
+            <model>RE-850</model>
+            <serial-number>1000718106</serial-number>
+            <start-time junos:seconds="1441873034">2015-09-10 12:17:14 GMT-4</start-time>
+            <up-time junos:seconds="85210847">986 days, 5 hours, 40 minutes, 47 seconds</up-time>
+            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
+            <load-average-one>0.13</load-average-one>
+            <load-average-five>0.07</load-average-five>
+            <load-average-fifteen>0.01</load-average-fifteen>
+        </route-engine>
+        <route-engine>
+            <slot>1</slot>
+            <mastership-state>backup</mastership-state>
+            <mastership-priority>backup (default)</mastership-priority>
+            <status>OK</status>
+            <temperature junos:celsius="25">25 degrees C / 77 degrees F</temperature>
+            <cpu-temperature junos:celsius="23">23 degrees C / 73 degrees F</cpu-temperature>
+            <memory-dram-size>1536</memory-dram-size>
+            <memory-buffer-utilization>21</memory-buffer-utilization>
+            <cpu-user>0</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>1</cpu-system>
+            <cpu-interrupt>0</cpu-interrupt>
+            <cpu-idle>99</cpu-idle>
+            <model>RE-850</model>
+            <serial-number>1000724454</serial-number>
+            <start-time junos:seconds="1441872983">2015-09-10 12:16:23 GMT-4</start-time>
+            <up-time junos:seconds="85210896">986 days, 5 hours, 41 minutes, 36 seconds</up-time>
+            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
+        </route-engine>
+    </route-engine-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>
+
+SPB-LRR-1_re0> show version | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/10.4R8/junos">
+    <software-information>
+        <host-name>SPB-LRR-1_re0</host-name>
+        <product-model>m10i</product-model>
+        <product-name>m10i</product-name>
+        <package-information>
+            <name>junos</name>
+            <comment>JUNOS Base OS boot [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jbase</name>
+            <comment>JUNOS Base OS Software Suite [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jkernel</name>
+            <comment>JUNOS Kernel Software Suite [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jcrypto</name>
+            <comment>JUNOS Crypto Software Suite [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jpfe-common</name>
+            <comment>JUNOS Packet Forwarding Engine Support (M/T Common) [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jpfe</name>
+            <comment>JUNOS Packet Forwarding Engine Support (M7i/M10i) [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jdocs</name>
+            <comment>JUNOS Online Documentation [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-voice</name>
+            <comment>JUNOS Voice Services Container package [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-bgf</name>
+            <comment>JUNOS Border Gateway Function package [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-aacl</name>
+            <comment>JUNOS Services AACL Container package [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-llpdf</name>
+            <comment>JUNOS Services LL-PDF Container package [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ptsp</name>
+            <comment>JUNOS Services PTSP Container package [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-sfw</name>
+            <comment>JUNOS Services Stateful Firewall [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-nat</name>
+            <comment>JUNOS Services NAT [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-alg</name>
+            <comment>JUNOS Services Application Level Gateways [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-cpcd</name>
+            <comment>JUNOS Services Captive Portal and Content Delivery Container package [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-rpm</name>
+            <comment>JUNOS Services RPM [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-appid</name>
+            <comment>JUNOS AppId Services [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-idp</name>
+            <comment>JUNOS IDP Services [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jruntime</name>
+            <comment>JUNOS Runtime Software Suite [10.4R8.5]</comment>
+        </package-information>
+        <package-information>
+            <name>jroute</name>
+            <comment>JUNOS Routing Software Suite [10.4R8.5]</comment>
+        </package-information>
+    </software-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>
+
+SPB-LRR-1_re0> show task replication | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/10.4R8/junos">
+    <task-replication-state>
+        <task-gres-state>Disabled</task-gres-state>
+        <task-re-mode>Master</task-re-mode>
+    </task-replication-state>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>

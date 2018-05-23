@@ -1,0 +1,88 @@
+
+SMR-DC1335-10-EX4300> show chassis routing-engine | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.1X53/junos">
+    <route-engine-information xmlns="http://xml.juniper.net/junos/14.1X53/junos-chassis">
+        <route-engine>
+            <slot>0</slot>
+            <mastership-state>master</mastership-state>
+            <status>OK</status>
+            <temperature junos:celsius="59">59 degrees C / 138 degrees F</temperature>
+            <cpu-temperature junos:celsius="59">59 degrees C / 138 degrees F</cpu-temperature>
+            <memory-dram-size>3072</memory-dram-size>
+            <memory-buffer-utilization>31</memory-buffer-utilization>
+            <cpu-user>14</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>10</cpu-system>
+            <cpu-interrupt>0</cpu-interrupt>
+            <cpu-idle>76</cpu-idle>
+            <model>EX4300-32F</model>
+            <serial-number>TW3717320102</serial-number>
+            <start-time junos:seconds="1505516588">2017-09-16 03:03:08 SAMT</start-time>
+            <up-time junos:seconds="14611290">169 days, 2 hours, 41 minutes, 30 seconds</up-time>
+            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
+            <load-average-one>0.06</load-average-one>
+            <load-average-five>0.04</load-average-five>
+            <load-average-fifteen>0.05</load-average-fifteen>
+        </route-engine>
+    </route-engine-information>
+    <cli>
+        <banner>{master:0}</banner>
+    </cli>
+</rpc-reply>
+
+SMR-DC1335-10-EX4300> show version | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.1X53/junos">
+    <multi-routing-engine-results>
+        
+        <multi-routing-engine-item>
+            
+            <re-name>fpc0</re-name>
+            
+            <software-information>
+                <host-name>SMR-DC1335-10-EX4300</host-name>
+                <product-model>ex4300-32f</product-model>
+                <product-name>ex4300-32f</product-name>
+                <junos-version>14.1X53-D45.3</junos-version>
+                <package-information>
+                    <name>junos</name>
+                    <comment>JUNOS EX  Software Suite [14.1X53-D45.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>fips-mode-powerpc</name>
+                    <comment>JUNOS FIPS mode utilities [14.1X53-D45.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jdocs-ex</name>
+                    <comment>JUNOS Online Documentation [14.1X53-D45.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>junos-ex-4300</name>
+                    <comment>JUNOS EX 4300 Software Suite [14.1X53-D45.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jweb-ex</name>
+                    <comment>JUNOS Web Management Platform Package [14.1X53-D45.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>py-base-powerpc</name>
+                    <comment>JUNOS py-base-powerpc [14.1X53-D45.3]</comment>
+                </package-information>
+            </software-information>
+        </multi-routing-engine-item>
+        
+    </multi-routing-engine-results>
+    <cli>
+        <banner>{master:0}</banner>
+    </cli>
+</rpc-reply>
+
+SMR-DC1335-10-EX4300> show task replication | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.1X53/junos">
+    <task-replication-state>
+        <task-gres-state>Disabled</task-gres-state>
+        <task-re-mode>Master</task-re-mode>
+    </task-replication-state>
+    <cli>
+        <banner>{master:0}</banner>
+    </cli>
+</rpc-reply>

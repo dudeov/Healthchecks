@@ -1,10 +1,40 @@
 
-5002-4050-PE1> show version | display xml
+SRN-BHM114-17-R-SIG01> show chassis routing-engine | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R9/junos">
+    <route-engine-information xmlns="http://xml.juniper.net/junos/13.3R9/junos-chassis">
+        <route-engine>
+            <status>OK</status>
+            <temperature junos:celsius="35">35 degrees C / 95 degrees F</temperature>
+            <cpu-temperature junos:celsius="44">44 degrees C / 111 degrees F</cpu-temperature>
+            <memory-dram-size>2048</memory-dram-size>
+            <memory-installed-size>2048</memory-installed-size>
+            <memory-buffer-utilization>51</memory-buffer-utilization>
+            <cpu-user>3</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>2</cpu-system>
+            <cpu-interrupt>0</cpu-interrupt>
+            <cpu-idle>95</cpu-idle>
+            <model>RE-MX5-T</model>
+            <serial-number>S/N CADK3206</serial-number>
+            <start-time junos:seconds="1482150067">2016-12-19 16:21:07 MSK</start-time>
+            <up-time junos:seconds="44933877">520 days, 1 hour, 37 minutes, 57 seconds</up-time>
+            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
+            <load-average-one>0.00</load-average-one>
+            <load-average-five>0.05</load-average-five>
+            <load-average-fifteen>0.06</load-average-fifteen>
+        </route-engine>
+    </route-engine-information>
+    <cli>
+        <banner></banner>
+    </cli>
+</rpc-reply>
+
+SRN-BHM114-17-R-SIG01> show version | display xml
 <rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R9/junos">
     <software-information>
-        <host-name>5002-4050-PE1</host-name>
-        <product-model>mx80</product-model>
-        <product-name>mx80</product-name>
+        <host-name>SRN-BHM114-17-R-SIG01</host-name>
+        <product-model>mx5-t</product-model>
+        <product-name>mx5-t</product-name>
         <junos-version>13.3R9.13</junos-version>
         <package-information>
             <name>junos</name>
@@ -66,17 +96,13 @@
             <name>jroute</name>
             <comment>JUNOS Routing Software Suite [13.3R9.13]</comment>
         </package-information>
-        <package-information>
-            <name>jais</name>
-            <comment>JUNOS AIS Script Suite [3.7R4.2]</comment>
-        </package-information>
     </software-information>
     <cli>
         <banner></banner>
     </cli>
 </rpc-reply>
 
-5002-4050-PE1>  show task replication | display xml
+SRN-BHM114-17-R-SIG01> show task replication | display xml
 <rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R9/junos">
     <task-replication-state>
         <task-gres-state>Disabled</task-gres-state>

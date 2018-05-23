@@ -1,0 +1,206 @@
+
+NNV-PE-MX960-1_re1> show chassis routing-engine | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/12.3R6/junos">
+    <route-engine-information xmlns="http://xml.juniper.net/junos/12.3R6/junos-chassis">
+        <route-engine>
+            <slot>0</slot>
+            <mastership-state>backup</mastership-state>
+            <mastership-priority>master</mastership-priority>
+            <status>OK</status>
+            <temperature junos:celsius="27">27 degrees C / 80 degrees F</temperature>
+            <cpu-temperature junos:celsius="26">26 degrees C / 78 degrees F</cpu-temperature>
+            <memory-dram-size>16351</memory-dram-size>
+            <memory-installed-size>16384</memory-installed-size>
+            <memory-buffer-utilization>22</memory-buffer-utilization>
+            <cpu-user>5</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>3</cpu-system>
+            <cpu-interrupt>2</cpu-interrupt>
+            <cpu-idle>90</cpu-idle>
+            <model>RE-S-1800x4</model>
+            <serial-number>9013046568</serial-number>
+            <start-time junos:seconds="1409134432">2014-08-27 14:13:52 MSK</start-time>
+            <up-time junos:seconds="117954117">1365 days, 5 hours, 1 minute, 57 seconds</up-time>
+            <last-reboot-reason>panic:ffs_blkfree: freeing free block</last-reboot-reason>
+            <load-average-one>0.12</load-average-one>
+            <load-average-five>0.15</load-average-five>
+            <load-average-fifteen>0.10</load-average-fifteen>
+        </route-engine>
+        <route-engine>
+            <slot>1</slot>
+            <mastership-state>master</mastership-state>
+            <mastership-priority>backup</mastership-priority>
+            <status>OK</status>
+            <temperature junos:celsius="27">27 degrees C / 80 degrees F</temperature>
+            <cpu-temperature junos:celsius="26">26 degrees C / 78 degrees F</cpu-temperature>
+            <memory-dram-size>16351</memory-dram-size>
+            <memory-installed-size>16384</memory-installed-size>
+            <memory-buffer-utilization>23</memory-buffer-utilization>
+            <cpu-user>8</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>11</cpu-system>
+            <cpu-interrupt>4</cpu-interrupt>
+            <cpu-idle>77</cpu-idle>
+            <model>RE-S-1800x4</model>
+            <serial-number>9013046509</serial-number>
+            <start-time junos:seconds="1397032559">2014-04-09 12:35:59 MSK</start-time>
+            <up-time junos:seconds="130051769">1505 days, 5 hours, 29 minutes, 29 seconds</up-time>
+            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
+            <load-average-one>0.46</load-average-one>
+            <load-average-five>0.60</load-average-five>
+            <load-average-fifteen>0.54</load-average-fifteen>
+        </route-engine>
+    </route-engine-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>
+
+NNV-PE-MX960-1_re1> show version | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/12.3R6/junos">
+    <software-information>
+        <host-name>NNV-PE-MX960-1_re1</host-name>
+        <product-model>mx960</product-model>
+        <product-name>mx960</product-name>
+        <package-information>
+            <name>junos</name>
+            <comment>JUNOS Base OS boot [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jbase</name>
+            <comment>JUNOS Base OS Software Suite [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jkernel</name>
+            <comment>JUNOS 64-bit Kernel Software Suite [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jcrypto64</name>
+            <comment>JUNOS Crypto Software Suite [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jpfe-common</name>
+            <comment>JUNOS Packet Forwarding Engine Support (M/T/EX Common) [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jpfe</name>
+            <comment>JUNOS Packet Forwarding Engine Support (MX Common) [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jdocs</name>
+            <comment>JUNOS Online Documentation [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-aacl</name>
+            <comment>JUNOS Services AACL Container package [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-alg</name>
+            <comment>JUNOS Services Application Level Gateways [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-appid</name>
+            <comment>JUNOS AppId Services [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-bgf</name>
+            <comment>JUNOS Border Gateway Function package [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-cpcd</name>
+            <comment>JUNOS Services Captive Portal and Content Delivery Container package [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-hcm</name>
+            <comment>JUNOS Services HTTP Content Management package [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-idp</name>
+            <comment>JUNOS IDP Services [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-llpdf</name>
+            <comment>JUNOS Services LL-PDF Container package [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-nat</name>
+            <comment>JUNOS Services NAT [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ptsp</name>
+            <comment>JUNOS Services PTSP Container package [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-rpm</name>
+            <comment>JUNOS Services RPM [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-sfw</name>
+            <comment>JUNOS Services Stateful Firewall [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-voice</name>
+            <comment>JUNOS Voice Services Container package [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-example</name>
+            <comment>JUNOS Services Example Container package [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ssl</name>
+            <comment>JUNOS Services SSL [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-crypto-base</name>
+            <comment>JUNOS Services Crypto [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ipsec</name>
+            <comment>JUNOS Services IPSec [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jruntime</name>
+            <comment>JUNOS Runtime Software Suite [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jplatform</name>
+            <comment>JUNOS platform Software Suite [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jroute</name>
+            <comment>JUNOS Routing Software Suite [12.3R6.6]</comment>
+        </package-information>
+        <package-information>
+            <name>jais</name>
+            <comment>AI-Scripts [4.1R10.2]</comment>
+        </package-information>
+    </software-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>
+
+NNV-PE-MX960-1_re1> show task replication | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/12.3R6/junos">
+    <task-replication-state>
+        <task-gres-state>Enabled</task-gres-state>
+        <task-re-mode>Master</task-re-mode>
+        <task-protocol-replication-name>BGP</task-protocol-replication-name>
+        <task-protocol-replication-state>Complete</task-protocol-replication-state>
+        <task-protocol-replication-name>IS-IS</task-protocol-replication-name>
+        <task-protocol-replication-state>Complete</task-protocol-replication-state>
+        <task-protocol-replication-name>PIM</task-protocol-replication-name>
+        <task-protocol-replication-state>Complete</task-protocol-replication-state>
+        <task-protocol-replication-name>MSDP</task-protocol-replication-name>
+        <task-protocol-replication-state>Complete</task-protocol-replication-state>
+        <task-protocol-replication-name>MPLS</task-protocol-replication-name>
+        <task-protocol-replication-state>Complete</task-protocol-replication-state>
+        <task-protocol-replication-name>RSVP</task-protocol-replication-name>
+        <task-protocol-replication-state>Complete</task-protocol-replication-state>
+        <task-protocol-replication-name>LDP</task-protocol-replication-name>
+        <task-protocol-replication-state>Complete</task-protocol-replication-state>
+    </task-replication-state>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>

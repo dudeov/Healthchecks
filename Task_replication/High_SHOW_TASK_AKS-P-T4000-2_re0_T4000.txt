@@ -1,5 +1,5 @@
 
-ADL-MX240-BBR-185_re0> show chassis routing-engine | display xml
+AKS-P-T4000-2_re0> show chassis routing-engine | display xml
 <rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R9/junos">
     <route-engine-information xmlns="http://xml.juniper.net/junos/13.3R9/junos-chassis">
         <route-engine>
@@ -7,48 +7,48 @@ ADL-MX240-BBR-185_re0> show chassis routing-engine | display xml
             <mastership-state>master</mastership-state>
             <mastership-priority>master</mastership-priority>
             <status>OK</status>
-            <temperature junos:celsius="36">36 degrees C / 96 degrees F</temperature>
-            <cpu-temperature junos:celsius="35">35 degrees C / 95 degrees F</cpu-temperature>
-            <memory-dram-size>16349</memory-dram-size>
-            <memory-installed-size>16384</memory-installed-size>
-            <memory-buffer-utilization>15</memory-buffer-utilization>
-            <cpu-user>2</cpu-user>
+            <temperature junos:celsius="23">23 degrees C / 73 degrees F</temperature>
+            <cpu-temperature junos:celsius="41">41 degrees C / 105 degrees F</cpu-temperature>
+            <memory-dram-size>8172</memory-dram-size>
+            <memory-installed-size>8192</memory-installed-size>
+            <memory-buffer-utilization>13</memory-buffer-utilization>
+            <cpu-user>0</cpu-user>
             <cpu-background>0</cpu-background>
-            <cpu-system>5</cpu-system>
-            <cpu-interrupt>2</cpu-interrupt>
-            <cpu-idle>92</cpu-idle>
-            <model>RE-S-1800x4</model>
-            <serial-number>9009163118</serial-number>
-            <start-time junos:seconds="1486747060">2017-02-10 20:17:40 GMT-3</start-time>
-            <up-time junos:seconds="40336966">466 days, 20 hours, 42 minutes, 46 seconds</up-time>
-            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
+            <cpu-system>8</cpu-system>
+            <cpu-interrupt>1</cpu-interrupt>
+            <cpu-idle>91</cpu-idle>
+            <model>RE-DUO-1800</model>
+            <serial-number>P737F-005005</serial-number>
+            <start-time junos:seconds="1472646736">2016-08-31 15:32:16 GMT-3</start-time>
+            <up-time junos:seconds="54437244">630 days, 1 hour, 27 minutes, 24 seconds</up-time>
+            <last-reboot-reason>0x1:power cycle/failure </last-reboot-reason>
             <load-average-one>0.03</load-average-one>
-            <load-average-five>0.05</load-average-five>
-            <load-average-fifteen>0.01</load-average-fifteen>
+            <load-average-five>0.09</load-average-five>
+            <load-average-fifteen>0.08</load-average-fifteen>
         </route-engine>
         <route-engine>
             <slot>1</slot>
             <mastership-state>backup</mastership-state>
             <mastership-priority>backup</mastership-priority>
             <status>OK</status>
-            <temperature junos:celsius="35">35 degrees C / 95 degrees F</temperature>
-            <cpu-temperature junos:celsius="33">33 degrees C / 91 degrees F</cpu-temperature>
-            <memory-dram-size>16349</memory-dram-size>
-            <memory-installed-size>16384</memory-installed-size>
+            <temperature junos:celsius="22">22 degrees C / 71 degrees F</temperature>
+            <cpu-temperature junos:celsius="38">38 degrees C / 100 degrees F</cpu-temperature>
+            <memory-dram-size>8172</memory-dram-size>
+            <memory-installed-size>8192</memory-installed-size>
             <memory-buffer-utilization>15</memory-buffer-utilization>
-            <cpu-user>1</cpu-user>
+            <cpu-user>0</cpu-user>
             <cpu-background>0</cpu-background>
-            <cpu-system>1</cpu-system>
-            <cpu-interrupt>1</cpu-interrupt>
-            <cpu-idle>98</cpu-idle>
-            <model>RE-S-1800x4</model>
-            <serial-number>9009161699</serial-number>
-            <start-time junos:seconds="1486747111">2017-02-10 20:18:31 GMT-3</start-time>
-            <up-time junos:seconds="40336915">466 days, 20 hours, 41 minutes, 55 seconds</up-time>
-            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
-            <load-average-one>0.10</load-average-one>
-            <load-average-five>0.03</load-average-five>
-            <load-average-fifteen>0.01</load-average-fifteen>
+            <cpu-system>0</cpu-system>
+            <cpu-interrupt>0</cpu-interrupt>
+            <cpu-idle>99</cpu-idle>
+            <model>RE-DUO-1800</model>
+            <serial-number>P737F-004945</serial-number>
+            <start-time junos:seconds="1472645879">2016-08-31 15:17:59 GMT-3</start-time>
+            <up-time junos:seconds="54438100">630 days, 1 hour, 41 minutes, 40 seconds</up-time>
+            <last-reboot-reason>0x1:power cycle/failure </last-reboot-reason>
+            <load-average-one>0.00</load-average-one>
+            <load-average-five>0.00</load-average-five>
+            <load-average-fifteen>0.00</load-average-fifteen>
         </route-engine>
     </route-engine-information>
     <cli>
@@ -56,12 +56,12 @@ ADL-MX240-BBR-185_re0> show chassis routing-engine | display xml
     </cli>
 </rpc-reply>
 
-ADL-MX240-BBR-185_re0> show version | display xml
+AKS-P-T4000-2_re0> show version | display xml
 <rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R9/junos">
     <software-information>
-        <host-name>ADL-MX240-BBR-185_re0</host-name>
-        <product-model>mx240</product-model>
-        <product-name>mx240</product-name>
+        <host-name>AKS-P-T4000-2_re0</host-name>
+        <product-model>t4000</product-model>
+        <product-name>t4000</product-name>
         <junos-version>13.3R9.13</junos-version>
         <package-information>
             <name>junos</name>
@@ -85,7 +85,7 @@ ADL-MX240-BBR-185_re0> show version | display xml
         </package-information>
         <package-information>
             <name>jpfe</name>
-            <comment>JUNOS Packet Forwarding Engine Support (MX Common) [13.3R9.13]</comment>
+            <comment>JUNOS Packet Forwarding Engine Support (T-Series) [13.3R9.13]</comment>
         </package-information>
         <package-information>
             <name>jdocs</name>
@@ -104,10 +104,6 @@ ADL-MX240-BBR-185_re0> show version | display xml
             <comment>JUNOS AppId Services [13.3R9.13]</comment>
         </package-information>
         <package-information>
-            <name>jservices-bgf</name>
-            <comment>JUNOS Border Gateway Function package [13.3R9.13]</comment>
-        </package-information>
-        <package-information>
             <name>jservices-hcm</name>
             <comment>JUNOS Services HTTP Content Management package [13.3R9.13]</comment>
         </package-information>
@@ -116,8 +112,8 @@ ADL-MX240-BBR-185_re0> show version | display xml
             <comment>JUNOS Services Captive Portal and Content Delivery Container package [13.3R9.13]</comment>
         </package-information>
         <package-information>
-            <name>jservices-idp</name>
-            <comment>JUNOS IDP Services [13.3R9.13]</comment>
+            <name>jservices-bgf</name>
+            <comment>JUNOS Border Gateway Function package [13.3R9.13]</comment>
         </package-information>
         <package-information>
             <name>jservices-llpdf</name>
@@ -126,6 +122,10 @@ ADL-MX240-BBR-185_re0> show version | display xml
         <package-information>
             <name>jservices-jflow</name>
             <comment>JUNOS Services Jflow Container package [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-idp</name>
+            <comment>JUNOS IDP Services [13.3R9.13]</comment>
         </package-information>
         <package-information>
             <name>jservices-mss</name>
@@ -156,12 +156,12 @@ ADL-MX240-BBR-185_re0> show version | display xml
             <comment>JUNOS Voice Services Container package [13.3R9.13]</comment>
         </package-information>
         <package-information>
-            <name>jservices-ssl</name>
-            <comment>JUNOS Services SSL [13.3R9.13]</comment>
-        </package-information>
-        <package-information>
             <name>jservices-crypto-base</name>
             <comment>JUNOS Services Crypto [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ssl</name>
+            <comment>JUNOS Services SSL [13.3R9.13]</comment>
         </package-information>
         <package-information>
             <name>jservices-ipsec</name>
@@ -193,14 +193,14 @@ ADL-MX240-BBR-185_re0> show version | display xml
     </cli>
 </rpc-reply>
 
-ADL-MX240-BBR-185_re0> show task replication | display xml
+AKS-P-T4000-2_re0> show task replication | display xml
 <rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R9/junos">
     <task-replication-state>
         <task-gres-state>Enabled</task-gres-state>
         <task-re-mode>Master</task-re-mode>
-        <task-protocol-replication-name>OSPF</task-protocol-replication-name>
+        <task-protocol-replication-name>IS-IS</task-protocol-replication-name>
         <task-protocol-replication-state>Complete</task-protocol-replication-state>
-        <task-protocol-replication-name>BGP</task-protocol-replication-name>
+        <task-protocol-replication-name>PIM</task-protocol-replication-name>
         <task-protocol-replication-state>Complete</task-protocol-replication-state>
         <task-protocol-replication-name>MPLS</task-protocol-replication-name>
         <task-protocol-replication-state>Complete</task-protocol-replication-state>

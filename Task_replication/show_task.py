@@ -56,9 +56,14 @@ def parse_file(fn):
 
 ###################################################################################################
 def show_task(rpc_reply_list, fn):
+    re_list = []
     rep_state_str = ""
     #iterrate over all XML trees
     for xml_tree in rpc_reply_list:
+        for re in xml_tree.xpath("//*[local-name() = 'route-engine']"):
+            for slots in re:
+                if slots.tag.find('slot') != -1:
+                    re_list.append(slots.text)
 
         for info_instances in xml_tree.xpath("//*[local-name() = 'software-information']"):
             for info in info_instances:
@@ -74,7 +79,7 @@ def show_task(rpc_reply_list, fn):
                 if status.tag.find('task-protocol-replication-state') != -1:
                     rep_state.append(status.text)
 
-    if ("mx80" not in chassis_model) and ("srx" not in chassis_model) and ("ex" not in chassis_model) and ("qfx" not in chassis_model) and ("m7" not in chassis_model):
+    if ("mx80" not in chassis_model) and ("srx" not in chassis_model) and ("ex" not in chassis_model) and ("qfx" not in chassis_model) and ("m7" not in chassis_model) and ("mx5-t" not in chassis_model):
         if len(rep_state) == 0:
             rep_state_str = "Status is not available/"
         else:
@@ -83,14 +88,17 @@ def show_task(rpc_reply_list, fn):
 
         new_rep_str = rep_state_str[0:-1]
 
-        print str(fn) +","+ str(chassis_model) +","+ str(enable_stat) +","+ new_rep_str
+        if len(re_list)==1: RE_status = "Single"
+        elif len(re_list)==2 and ("0" in re_list) and ("1" in re_list): RE_status = "Dual"
+        else: RE_status = "TBD"
+        print str(fn) +","+ str(chassis_model) +","+ str(enable_stat) +","+ new_rep_str +","+ RE_status
 ###################################################################################################
 
 
 ###################################################################################################
 def main():
     list_of_files = fn_l.fn_string.split('\n')
-    print("Hostname,Chassis,Enabled\Disabled,Status")
+    print("Hostname,Chassis,Enabled\Disabled,Status,RE_status")
     for fn in list_of_files:
         rpc_reply_list = parse_file(fn)
         show_task(rpc_reply_list, fn)

@@ -1,0 +1,317 @@
+
+KRD-MX960-BBR-39_re0> show chassis routing-engine | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/16.1R4/junos">
+    <route-engine-information xmlns="http://xml.juniper.net/junos/16.1R4/junos-chassis">
+        <route-engine>
+            <slot>0</slot>
+            <mastership-state>master</mastership-state>
+            <mastership-priority>master</mastership-priority>
+            <status>OK</status>
+            <temperature junos:celsius="26">26 degrees C / 78 degrees F</temperature>
+            <cpu-temperature junos:celsius="25">25 degrees C / 77 degrees F</cpu-temperature>
+            <memory-dram-size>16330 MB</memory-dram-size>
+            <memory-installed-size>(16384 MB installed)</memory-installed-size>
+            <memory-buffer-utilization>18</memory-buffer-utilization>
+            <cpu-user>2</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>5</cpu-system>
+            <cpu-interrupt>1</cpu-interrupt>
+            <cpu-idle>92</cpu-idle>
+            <cpu-user1>3</cpu-user1>
+            <cpu-background1>0</cpu-background1>
+            <cpu-system1>6</cpu-system1>
+            <cpu-interrupt1>1</cpu-interrupt1>
+            <cpu-idle1>90</cpu-idle1>
+            <cpu-user2>3</cpu-user2>
+            <cpu-background2>0</cpu-background2>
+            <cpu-system2>4</cpu-system2>
+            <cpu-interrupt2>1</cpu-interrupt2>
+            <cpu-idle2>92</cpu-idle2>
+            <cpu-user3>2</cpu-user3>
+            <cpu-background3>0</cpu-background3>
+            <cpu-system3>4</cpu-system3>
+            <cpu-interrupt3>1</cpu-interrupt3>
+            <cpu-idle3>92</cpu-idle3>
+            <model>RE-S-1800x4</model>
+            <serial-number>9009211831</serial-number>
+            <start-time junos:seconds="1509656141">2017-11-02 23:55:41 GMT-3</start-time>
+            <up-time junos:seconds="17427877">201 days, 17 hours, 4 minutes, 37 seconds</up-time>
+            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
+            <load-average-one>0.42</load-average-one>
+            <load-average-five>0.36</load-average-five>
+            <load-average-fifteen>0.33</load-average-fifteen>
+        </route-engine>
+        <route-engine>
+            <slot>1</slot>
+            <mastership-state>backup</mastership-state>
+            <mastership-priority>backup</mastership-priority>
+            <status>OK</status>
+            <temperature junos:celsius="28">28 degrees C / 82 degrees F</temperature>
+            <cpu-temperature junos:celsius="25">25 degrees C / 77 degrees F</cpu-temperature>
+            <memory-dram-size>16330 MB</memory-dram-size>
+            <memory-installed-size>(16384 MB installed)</memory-installed-size>
+            <memory-buffer-utilization>11</memory-buffer-utilization>
+            <cpu-user>1</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>1</cpu-system>
+            <cpu-interrupt>0</cpu-interrupt>
+            <cpu-idle>98</cpu-idle>
+            <model>RE-S-1800x4</model>
+            <serial-number>9013076428</serial-number>
+            <start-time junos:seconds="1509654025">2017-11-02 23:20:25 GMT-3</start-time>
+            <up-time junos:seconds="17429996">201 days, 17 hours, 39 minutes, 56 seconds</up-time>
+            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
+            <load-average-one>0.18</load-average-one>
+            <load-average-five>0.16</load-average-five>
+            <load-average-fifteen>0.15</load-average-fifteen>
+        </route-engine>
+    </route-engine-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>
+
+KRD-MX960-BBR-39_re0> show version | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/16.1R4/junos">
+    <software-information>
+        <host-name>KRD-MX960-BBR-39_re0</host-name>
+        <product-model>mx960</product-model>
+        <product-name>mx960</product-name>
+        <junos-version>16.1R4-S6.3</junos-version>
+        pkgorder: requirement `junos-libs32-mx' in file `/packages/sets/active/junos-runtime-platform/package.xml' has no providers.
+        <package-information>
+            <name>os-kernel</name>
+            <comment>JUNOS OS Kernel 64-bit  [20171012.356211_builder_stable_10]</comment>
+        </package-information>
+        <package-information>
+            <name>os-libs</name>
+            <comment>JUNOS OS libs [20171012.356211_builder_stable_10]</comment>
+        </package-information>
+        <package-information>
+            <name>os-runtime</name>
+            <comment>JUNOS OS runtime [20171012.356211_builder_stable_10]</comment>
+        </package-information>
+        <package-information>
+            <name>zoneinfo</name>
+            <comment>JUNOS OS time zone information [20171012.356211_builder_stable_10]</comment>
+        </package-information>
+        <package-information>
+            <name>os-libs-compat32</name>
+            <comment>JUNOS OS libs compat32 [20171012.356211_builder_stable_10]</comment>
+        </package-information>
+        <package-information>
+            <name>os-compat32</name>
+            <comment>JUNOS OS 32-bit compatibility [20171012.356211_builder_stable_10]</comment>
+        </package-information>
+        <package-information>
+            <name>py-extensions</name>
+            <comment>JUNOS py extensions [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>py-base</name>
+            <comment>JUNOS py base [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>os-crypto</name>
+            <comment>JUNOS OS crypto [20171012.356211_builder_stable_10]</comment>
+        </package-information>
+        <package-information>
+            <name>netstack</name>
+            <comment>JUNOS network stack and utilities [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-libs</name>
+            <comment>JUNOS libs [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-libs-compat32</name>
+            <comment>JUNOS libs compat32 [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-runtime</name>
+            <comment>JUNOS runtime [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-libs-compat32-platform</name>
+            <comment>JUNOS mx libs compat32 [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-runtime-platform</name>
+            <comment>JUNOS mx runtime [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-platform</name>
+            <comment>JUNOS common platform support [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-modules</name>
+            <comment>JUNOS modules [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-modules-platform</name>
+            <comment>JUNOS mx modules [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-libs-platform</name>
+            <comment>JUNOS mx libs [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-dp-crypto-support</name>
+            <comment>JUNOS Data Plane Crypto Support [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-dp-crypto-support-platform</name>
+            <comment>JUNOS mtx Data Plane Crypto Support [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-daemons</name>
+            <comment>JUNOS daemons [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>junos-daemons-platform</name>
+            <comment>JUNOS mx daemons [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-voice</name>
+            <comment>JUNOS Voice Services Container package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-traffic-dird</name>
+            <comment>JUNOS Services TLB Service PIC package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ssl</name>
+            <comment>JUNOS Services SSL [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-sfw</name>
+            <comment>JUNOS Services Stateful Firewall [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-rpm</name>
+            <comment>JUNOS Services RPM [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ptsp</name>
+            <comment>JUNOS Services PTSP Container package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-pcef</name>
+            <comment>JUNOS Services PCEF package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-nat</name>
+            <comment>JUNOS Services NAT [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-mss</name>
+            <comment>JUNOS Services Mobile Subscriber Service Container package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-mobile</name>
+            <comment>JUNOS Services MobileNext Software package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-lrf</name>
+            <comment>JUNOS Services Logging Report Framework package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-llpdf</name>
+            <comment>JUNOS Services LL-PDF Container package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-jflow</name>
+            <comment>JUNOS Services Jflow Container package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-jdpi</name>
+            <comment>JUNOS Services Deep Packet Inspection package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ipsec</name>
+            <comment>JUNOS Services IPSec [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ids</name>
+            <comment>JUNOS Services IDS [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-idp</name>
+            <comment>JUNOS IDP Services [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-hcm</name>
+            <comment>JUNOS Services HTTP Content Management package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-crypto-base</name>
+            <comment>JUNOS Services Crypto [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-cpcd</name>
+            <comment>JUNOS Services Captive Portal and Content Delivery Container package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-cos</name>
+            <comment>JUNOS Services COS [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-bgf</name>
+            <comment>JUNOS Border Gateway Function package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-appid</name>
+            <comment>JUNOS AppId Services [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-alg</name>
+            <comment>JUNOS Services Application Level Gateways [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-aacl</name>
+            <comment>JUNOS Services AACL Container package [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jsdn</name>
+            <comment>JUNOS SDN Software Suite [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jsd</name>
+            <comment>JUNOS Extension Toolkit [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jpfe-wrlinux</name>
+            <comment>JUNOS Packet Forwarding Engine Support (wrlinux) [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jpfe-platform</name>
+            <comment>JUNOS Packet Forwarding Engine Support (MX/EX92XX Common) [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jpfe-common</name>
+            <comment>JUNOS Packet Forwarding Engine Support (M/T Common) [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jpfe-X</name>
+            <comment>JUNOS Packet Forwarding Engine Support (MX Common) [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+        <package-information>
+            <name>jdocs</name>
+            <comment>JUNOS Online Documentation [20171020.205711_builder_junos_161_r4_s6]</comment>
+        </package-information>
+    </software-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>
+
+KRD-MX960-BBR-39_re0> show task replication | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/16.1R4/junos">
+    <task-replication-state>
+        <task-gres-state>Disabled</task-gres-state>
+        <task-re-mode>Master</task-re-mode>
+    </task-replication-state>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>

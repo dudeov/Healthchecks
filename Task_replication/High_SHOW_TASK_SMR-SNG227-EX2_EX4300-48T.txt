@@ -1,0 +1,266 @@
+
+SMR-SNG227-EX2> show chassis routing-engine | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.1X53/junos">
+    <route-engine-information xmlns="http://xml.juniper.net/junos/14.1X53/junos-chassis">
+        <route-engine>
+            <slot>0</slot>
+            <mastership-state>master</mastership-state>
+            <status>OK</status>
+            <temperature junos:celsius="26">26 degrees C / 78 degrees F</temperature>
+            <cpu-temperature junos:celsius="26">26 degrees C / 78 degrees F</cpu-temperature>
+            <memory-dram-size>1953</memory-dram-size>
+            <memory-buffer-utilization>55</memory-buffer-utilization>
+            <cpu-user>9</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>17</cpu-system>
+            <cpu-interrupt>0</cpu-interrupt>
+            <cpu-idle>74</cpu-idle>
+            <model>QFX Routing Engine</model>
+            <serial-number>BUILTIN</serial-number>
+            <up-time junos:seconds="23226067">268 days, 19 hours, 41 minutes, 7 seconds</up-time>
+            <last-reboot-reason>0x4000:VJUNOS reboot </last-reboot-reason>
+            <load-average-one>0.68</load-average-one>
+            <load-average-five>0.55</load-average-five>
+            <load-average-fifteen>0.46</load-average-fifteen>
+        </route-engine>
+        <route-engine>
+            <slot>1</slot>
+            <mastership-state>backup</mastership-state>
+            <status>OK</status>
+            <temperature junos:celsius="26">26 degrees C / 78 degrees F</temperature>
+            <cpu-temperature junos:celsius="26">26 degrees C / 78 degrees F</cpu-temperature>
+            <memory-dram-size>1953</memory-dram-size>
+            <memory-buffer-utilization>44</memory-buffer-utilization>
+            <cpu-user>6</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>15</cpu-system>
+            <cpu-interrupt>0</cpu-interrupt>
+            <cpu-idle>79</cpu-idle>
+            <model>QFX Routing Engine</model>
+            <serial-number>BUILTIN</serial-number>
+            <up-time junos:seconds="23226067">268 days, 19 hours, 41 minutes, 7 seconds</up-time>
+            <last-reboot-reason>0x4000:VJUNOS reboot </last-reboot-reason>
+            <load-average-one>0.32</load-average-one>
+            <load-average-five>0.27</load-average-five>
+            <load-average-fifteen>0.23</load-average-fifteen>
+        </route-engine>
+    </route-engine-information>
+    <cli>
+        <banner>{master:0}</banner>
+    </cli>
+</rpc-reply>
+
+SMR-SNG227-EX2> show version | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.1X53/junos">
+    <multi-routing-engine-results>
+        
+        <multi-routing-engine-item>
+            
+            <re-name>fpc0</re-name>
+            
+            <software-information>
+                <host-name>SMR-SNG217-27-QFX1</host-name>
+                <product-model>qfx5100-96s-8q</product-model>
+                <product-name>qfx5100-96s-8q</product-name>
+                <junos-version>14.1X53-D35.3</junos-version>
+                <package-information>
+                    <name>jbase</name>
+                    <comment>JUNOS Base OS Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>junos</name>
+                    <comment>JUNOS Base OS boot [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jdocs</name>
+                    <comment>JUNOS Online Documentation [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jcrypto</name>
+                    <comment>JUNOS Crypto Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jkernel</name>
+                    <comment>JUNOS Kernel Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jpfe</name>
+                    <comment>JUNOS Packet Forwarding Engine Support (qfx-ex-x86-32) [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jroute</name>
+                    <comment>JUNOS Routing Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jsdn-i386</name>
+                    <comment>JUNOS SDN Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jswitch</name>
+                    <comment>JUNOS Enterprise Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jweb-ex</name>
+                    <comment>JUNOS Web Management Platform Package [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>py-base-i386</name>
+                    <comment>JUNOS py-base-i386 [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>JUNOS Host Software</name>
+                    <comment>JUNOS Host Software [14.1X53-D35.3]</comment>
+                </package-information>
+            </software-information>
+        </multi-routing-engine-item>
+        
+        <multi-routing-engine-item>
+            
+            <re-name>fpc1</re-name>
+            
+            <software-information>
+                <host-name>SMR-SNG217-27-QFX1</host-name>
+                <product-model>qfx5100-96s-8q</product-model>
+                <product-name>qfx5100-96s-8q</product-name>
+                <junos-version>14.1X53-D35.3</junos-version>
+                <package-information>
+                    <name>jbase</name>
+                    <comment>JUNOS Base OS Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>junos</name>
+                    <comment>JUNOS Base OS boot [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jdocs</name>
+                    <comment>JUNOS Online Documentation [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jcrypto</name>
+                    <comment>JUNOS Crypto Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jkernel</name>
+                    <comment>JUNOS Kernel Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jpfe</name>
+                    <comment>JUNOS Packet Forwarding Engine Support (qfx-ex-x86-32) [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jroute</name>
+                    <comment>JUNOS Routing Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jsdn-i386</name>
+                    <comment>JUNOS SDN Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jswitch</name>
+                    <comment>JUNOS Enterprise Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jweb-ex</name>
+                    <comment>JUNOS Web Management Platform Package [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>py-base-i386</name>
+                    <comment>JUNOS py-base-i386 [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>JUNOS Host Software</name>
+                    <comment>JUNOS Host Software [14.1X53-D35.3]</comment>
+                </package-information>
+            </software-information>
+        </multi-routing-engine-item>
+        
+        <multi-routing-engine-item>
+            
+            <re-name>fpc2</re-name>
+            
+            <software-information>
+                <host-name>SMR-SNG217-27-QFX1</host-name>
+                <product-model>ex4300-48t</product-model>
+                <product-name>ex4300-48t</product-name>
+                <junos-version>14.1X53-D35.3</junos-version>
+                <package-information>
+                    <name>junos</name>
+                    <comment>JUNOS EX  Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>fips-mode-powerpc</name>
+                    <comment>JUNOS FIPS mode utilities [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jdocs-ex</name>
+                    <comment>JUNOS Online Documentation [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>junos-ex-4300</name>
+                    <comment>JUNOS EX 4300 Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jweb-ex</name>
+                    <comment>JUNOS Web Management Platform Package [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>py-base-powerpc</name>
+                    <comment>JUNOS py-base-powerpc [14.1X53-D35.3]</comment>
+                </package-information>
+            </software-information>
+        </multi-routing-engine-item>
+        
+        <multi-routing-engine-item>
+            
+            <re-name>fpc3</re-name>
+            
+            <software-information>
+                <host-name>SMR-SNG217-27-QFX1</host-name>
+                <product-model>ex4300-48t</product-model>
+                <product-name>ex4300-48t</product-name>
+                <junos-version>14.1X53-D35.3</junos-version>
+                <package-information>
+                    <name>junos</name>
+                    <comment>JUNOS EX  Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>fips-mode-powerpc</name>
+                    <comment>JUNOS FIPS mode utilities [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jdocs-ex</name>
+                    <comment>JUNOS Online Documentation [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>junos-ex-4300</name>
+                    <comment>JUNOS EX 4300 Software Suite [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>jweb-ex</name>
+                    <comment>JUNOS Web Management Platform Package [14.1X53-D35.3]</comment>
+                </package-information>
+                <package-information>
+                    <name>py-base-powerpc</name>
+                    <comment>JUNOS py-base-powerpc [14.1X53-D35.3]</comment>
+                </package-information>
+            </software-information>
+        </multi-routing-engine-item>
+        
+    </multi-routing-engine-results>
+    <cli>
+        <banner>{master:0}</banner>
+    </cli>
+</rpc-reply>
+
+SMR-SNG227-EX2> show task replication | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/14.1X53/junos">
+    <task-replication-state>
+        <task-gres-state>Enabled</task-gres-state>
+        <task-re-mode>Master</task-re-mode>
+        <task-protocol-replication-name>OSPF</task-protocol-replication-name>
+        <task-protocol-replication-state>Complete</task-protocol-replication-state>
+    </task-replication-state>
+    <cli>
+        <banner>{master:0}</banner>
+    </cli>
+</rpc-reply>

@@ -1,0 +1,103 @@
+
+SRN-BHM114-19-SIG03> show chassis routing-engine | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/12.3R12/junos">
+    <route-engine-information xmlns="http://xml.juniper.net/junos/12.3R12/junos-chassis">
+        <route-engine>
+            <slot>0</slot>
+            <mastership-state>master</mastership-state>
+            <status>OK</status>
+            <temperature junos:celsius="31">31 degrees C / 87 degrees F</temperature>
+            <cpu-temperature junos:celsius="31">31 degrees C / 87 degrees F</cpu-temperature>
+            <memory-dram-size>1024</memory-dram-size>
+            <memory-buffer-utilization>48</memory-buffer-utilization>
+            <cpu-user>2</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>1</cpu-system>
+            <cpu-interrupt>0</cpu-interrupt>
+            <cpu-idle>97</cpu-idle>
+            <model>EX4200-48T, 8 POE</model>
+            <serial-number>CJ0214366905</serial-number>
+            <start-time junos:seconds="1453273452">2016-01-20 11:04:12 MSK</start-time>
+            <up-time junos:seconds="44927117">519 days, 23 hours, 45 minutes, 17 seconds</up-time>
+            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
+            <load-average-one>0.01</load-average-one>
+            <load-average-five>0.03</load-average-five>
+            <load-average-fifteen>0.00</load-average-fifteen>
+        </route-engine>
+    </route-engine-information>
+    <cli>
+        <banner>{master:0}</banner>
+    </cli>
+</rpc-reply>
+
+SRN-BHM114-19-SIG03> show version | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/12.3R12/junos">
+    <multi-routing-engine-results>
+        
+        <multi-routing-engine-item>
+            
+            <re-name>fpc0</re-name>
+            
+            <software-information>
+                <host-name>SRN-BHM114-19-SIG03</host-name>
+                <product-model>ex4200-48t</product-model>
+                <product-name>ex4200-48t</product-name>
+                <package-information>
+                    <name>junos</name>
+                    <comment>JUNOS Base OS boot [12.3R12.4]</comment>
+                </package-information>
+                <package-information>
+                    <name>jbase</name>
+                    <comment>JUNOS Base OS Software Suite [12.3R12.4]</comment>
+                </package-information>
+                <package-information>
+                    <name>jkernel-ex</name>
+                    <comment>JUNOS Kernel Software Suite [12.3R12.4]</comment>
+                </package-information>
+                <package-information>
+                    <name>jcrypto-ex</name>
+                    <comment>JUNOS Crypto Software Suite [12.3R12.4]</comment>
+                </package-information>
+                <package-information>
+                    <name>jdocs-ex</name>
+                    <comment>JUNOS Online Documentation [12.3R12.4]</comment>
+                </package-information>
+                <package-information>
+                    <name>jswitch-ex</name>
+                    <comment>JUNOS Enterprise Software Suite [12.3R12.4]</comment>
+                </package-information>
+                <package-information>
+                    <name>jpfe-ex42x</name>
+                    <comment>JUNOS Packet Forwarding Engine Enterprise Software Suite [12.3R12.4]</comment>
+                </package-information>
+                <package-information>
+                    <name>jroute-ex</name>
+                    <comment>JUNOS Routing Software Suite [12.3R12.4]</comment>
+                </package-information>
+                <package-information>
+                    <name>jweb-ex</name>
+                    <comment>JUNOS Web Management [12.3R12.4]</comment>
+                </package-information>
+                <package-information>
+                    <name>fips-mode-powerpc</name>
+                    <comment>JUNOS FIPS mode utilities [12.3R12.4]</comment>
+                </package-information>
+            </software-information>
+        </multi-routing-engine-item>
+        
+    </multi-routing-engine-results>
+    <cli>
+        <banner>{master:0}</banner>
+    </cli>
+</rpc-reply>
+
+SRN-BHM114-19-SIG03> show task replication | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/12.3R12/junos">
+    <task-replication-state>
+        <task-gres-state>Disabled</task-gres-state>
+        <task-re-mode>Master</task-re-mode>
+    </task-replication-state>
+    <cli>
+        <banner>{master:0}</banner>
+    </cli>
+</rpc-reply>

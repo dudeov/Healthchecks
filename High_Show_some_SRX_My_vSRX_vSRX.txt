@@ -1,0 +1,33 @@
+
+My_vSRX> show chassis routing-engine | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/12.1X47/junos">
+    <route-engine-information xmlns="http://xml.juniper.net/junos/12.1X47/junos-chassis">
+        <route-engine>
+            <status>Testing</status>
+            <memory-system-total>1024</memory-system-total>
+            <memory-system-total-used>666</memory-system-total-used>
+            <memory-system-total-util>65</memory-system-total-util>
+            <memory-control-plane>594</memory-control-plane>
+            <memory-control-plane-used>356</memory-control-plane-used>
+            <memory-control-plane-util>60</memory-control-plane-util>
+            <memory-data-plane>430</memory-data-plane>
+            <memory-data-plane-used>305</memory-data-plane-used>
+            <memory-data-plane-util>71</memory-data-plane-util>
+            <cpu-user>0</cpu-user>
+            <cpu-background>0</cpu-background>
+            <cpu-system>0</cpu-system>
+            <cpu-interrupt>0</cpu-interrupt>
+            <cpu-idle>100</cpu-idle>
+            <model>FIREFLY-PERIMETER RE</model>
+            <start-time junos:seconds="1524314242">2018-04-21 12:37:22 UTC</start-time>
+            <up-time junos:seconds="195976">2 days, 6 hours, 26 minutes, 16 seconds</up-time>
+            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
+            <load-average-one>0.00</load-average-one>
+            <load-average-five>0.00</load-average-five>
+            <load-average-fifteen>0.00</load-average-fifteen>
+        </route-engine>
+    </route-engine-information>
+    <cli>
+        <banner></banner>
+    </cli>
+</rpc-reply>

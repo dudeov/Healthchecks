@@ -1,67 +1,43 @@
 
-ADL-MX240-BBR-185_re0> show chassis routing-engine | display xml
+RST-MX480-BBR-20_re0> show chassis routing-engine | display xml
 <rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R9/junos">
     <route-engine-information xmlns="http://xml.juniper.net/junos/13.3R9/junos-chassis">
         <route-engine>
             <slot>0</slot>
             <mastership-state>master</mastership-state>
-            <mastership-priority>master</mastership-priority>
-            <status>OK</status>
-            <temperature junos:celsius="36">36 degrees C / 96 degrees F</temperature>
-            <cpu-temperature junos:celsius="35">35 degrees C / 95 degrees F</cpu-temperature>
-            <memory-dram-size>16349</memory-dram-size>
-            <memory-installed-size>16384</memory-installed-size>
-            <memory-buffer-utilization>15</memory-buffer-utilization>
-            <cpu-user>2</cpu-user>
-            <cpu-background>0</cpu-background>
-            <cpu-system>5</cpu-system>
-            <cpu-interrupt>2</cpu-interrupt>
-            <cpu-idle>92</cpu-idle>
-            <model>RE-S-1800x4</model>
-            <serial-number>9009163118</serial-number>
-            <start-time junos:seconds="1486747060">2017-02-10 20:17:40 GMT-3</start-time>
-            <up-time junos:seconds="40336966">466 days, 20 hours, 42 minutes, 46 seconds</up-time>
-            <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
-            <load-average-one>0.03</load-average-one>
-            <load-average-five>0.05</load-average-five>
-            <load-average-fifteen>0.01</load-average-fifteen>
-        </route-engine>
-        <route-engine>
-            <slot>1</slot>
-            <mastership-state>backup</mastership-state>
-            <mastership-priority>backup</mastership-priority>
+            <mastership-priority>master (default)</mastership-priority>
             <status>OK</status>
             <temperature junos:celsius="35">35 degrees C / 95 degrees F</temperature>
-            <cpu-temperature junos:celsius="33">33 degrees C / 91 degrees F</cpu-temperature>
+            <cpu-temperature junos:celsius="31">31 degrees C / 87 degrees F</cpu-temperature>
             <memory-dram-size>16349</memory-dram-size>
             <memory-installed-size>16384</memory-installed-size>
-            <memory-buffer-utilization>15</memory-buffer-utilization>
-            <cpu-user>1</cpu-user>
+            <memory-buffer-utilization>22</memory-buffer-utilization>
+            <cpu-user>12</cpu-user>
             <cpu-background>0</cpu-background>
-            <cpu-system>1</cpu-system>
-            <cpu-interrupt>1</cpu-interrupt>
-            <cpu-idle>98</cpu-idle>
+            <cpu-system>6</cpu-system>
+            <cpu-interrupt>2</cpu-interrupt>
+            <cpu-idle>81</cpu-idle>
             <model>RE-S-1800x4</model>
-            <serial-number>9009161699</serial-number>
-            <start-time junos:seconds="1486747111">2017-02-10 20:18:31 GMT-3</start-time>
-            <up-time junos:seconds="40336915">466 days, 20 hours, 41 minutes, 55 seconds</up-time>
+            <serial-number>9009171030</serial-number>
+            <start-time junos:seconds="1467072500">2016-06-28 03:08:20 GMT-3</start-time>
+            <up-time junos:seconds="60011460">694 days, 13 hours, 51 minutes</up-time>
             <last-reboot-reason>Router rebooted after a normal shutdown.</last-reboot-reason>
-            <load-average-one>0.10</load-average-one>
-            <load-average-five>0.03</load-average-five>
-            <load-average-fifteen>0.01</load-average-fifteen>
+            <load-average-one>0.04</load-average-one>
+            <load-average-five>0.07</load-average-five>
+            <load-average-fifteen>0.05</load-average-fifteen>
         </route-engine>
     </route-engine-information>
     <cli>
-        <banner>{master}</banner>
+        <banner></banner>
     </cli>
 </rpc-reply>
 
-ADL-MX240-BBR-185_re0> show version | display xml
+RST-MX480-BBR-20_re0> show version | display xml
 <rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R9/junos">
     <software-information>
-        <host-name>ADL-MX240-BBR-185_re0</host-name>
-        <product-model>mx240</product-model>
-        <product-name>mx240</product-name>
+        <host-name>RST-MX480-BBR-20_re0</host-name>
+        <product-model>mx480</product-model>
+        <product-name>mx480</product-name>
         <junos-version>13.3R9.13</junos-version>
         <package-information>
             <name>junos</name>
@@ -104,16 +80,16 @@ ADL-MX240-BBR-185_re0> show version | display xml
             <comment>JUNOS AppId Services [13.3R9.13]</comment>
         </package-information>
         <package-information>
+            <name>jservices-cpcd</name>
+            <comment>JUNOS Services Captive Portal and Content Delivery Container package [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
             <name>jservices-bgf</name>
             <comment>JUNOS Border Gateway Function package [13.3R9.13]</comment>
         </package-information>
         <package-information>
             <name>jservices-hcm</name>
             <comment>JUNOS Services HTTP Content Management package [13.3R9.13]</comment>
-        </package-information>
-        <package-information>
-            <name>jservices-cpcd</name>
-            <comment>JUNOS Services Captive Portal and Content Delivery Container package [13.3R9.13]</comment>
         </package-information>
         <package-information>
             <name>jservices-idp</name>
@@ -128,20 +104,20 @@ ADL-MX240-BBR-185_re0> show version | display xml
             <comment>JUNOS Services Jflow Container package [13.3R9.13]</comment>
         </package-information>
         <package-information>
-            <name>jservices-mss</name>
-            <comment>JUNOS Services Mobile Subscriber Service Container package [13.3R9.13]</comment>
-        </package-information>
-        <package-information>
             <name>jservices-mobile</name>
             <comment>JUNOS Services MobileNext Software package [13.3R9.13]</comment>
         </package-information>
         <package-information>
-            <name>jservices-ptsp</name>
-            <comment>JUNOS Services PTSP Container package [13.3R9.13]</comment>
+            <name>jservices-mss</name>
+            <comment>JUNOS Services Mobile Subscriber Service Container package [13.3R9.13]</comment>
         </package-information>
         <package-information>
             <name>jservices-nat</name>
             <comment>JUNOS Services NAT [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ptsp</name>
+            <comment>JUNOS Services PTSP Container package [13.3R9.13]</comment>
         </package-information>
         <package-information>
             <name>jservices-rpm</name>
@@ -156,12 +132,12 @@ ADL-MX240-BBR-185_re0> show version | display xml
             <comment>JUNOS Voice Services Container package [13.3R9.13]</comment>
         </package-information>
         <package-information>
-            <name>jservices-ssl</name>
-            <comment>JUNOS Services SSL [13.3R9.13]</comment>
-        </package-information>
-        <package-information>
             <name>jservices-crypto-base</name>
             <comment>JUNOS Services Crypto [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ssl</name>
+            <comment>JUNOS Services SSL [13.3R9.13]</comment>
         </package-information>
         <package-information>
             <name>jservices-ipsec</name>
@@ -189,27 +165,17 @@ ADL-MX240-BBR-185_re0> show version | display xml
         </package-information>
     </software-information>
     <cli>
-        <banner>{master}</banner>
+        <banner></banner>
     </cli>
 </rpc-reply>
 
-ADL-MX240-BBR-185_re0> show task replication | display xml
+RST-MX480-BBR-20_re0> show task replication | display xml
 <rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R9/junos">
     <task-replication-state>
-        <task-gres-state>Enabled</task-gres-state>
+        <task-gres-state>Disabled</task-gres-state>
         <task-re-mode>Master</task-re-mode>
-        <task-protocol-replication-name>OSPF</task-protocol-replication-name>
-        <task-protocol-replication-state>Complete</task-protocol-replication-state>
-        <task-protocol-replication-name>BGP</task-protocol-replication-name>
-        <task-protocol-replication-state>Complete</task-protocol-replication-state>
-        <task-protocol-replication-name>MPLS</task-protocol-replication-name>
-        <task-protocol-replication-state>Complete</task-protocol-replication-state>
-        <task-protocol-replication-name>RSVP</task-protocol-replication-name>
-        <task-protocol-replication-state>Complete</task-protocol-replication-state>
-        <task-protocol-replication-name>LDP</task-protocol-replication-name>
-        <task-protocol-replication-state>Complete</task-protocol-replication-state>
     </task-replication-state>
     <cli>
-        <banner>{master}</banner>
+        <banner></banner>
     </cli>
 </rpc-reply>
