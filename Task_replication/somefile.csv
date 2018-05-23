@@ -1,0 +1,6 @@
+Hostname,Chassis,Enabled\Disabled,Status
+Low_SHOW_TASK_KB-PE-CUP-12_MX104.txt,mx104,Enabled,NotStarted/NotStarted/NotStarted/NotStarted/NotStarted
+Low_SHOW_TASK_autovo-cr-1-MX240_MX240.txt,mx240,Enabled,NotStarted/NotStarted/NotStarted/NotStarted
+High_SHOW_TASK_ADL-MX240-BBR-185_re0_MX240.txt,mx240,Enabled,Complete/Complete/Complete/Complete/Complete
+Low_SHOW_TASK_spb-ats428-pe1-mx480_MX480.txt,mx480,Disabled,Status is not available
+High_SHOW_TASK_KB-P2_MX960.txt,mx960,Enabled,Complete/Complete/Complete/Complete/InProgress

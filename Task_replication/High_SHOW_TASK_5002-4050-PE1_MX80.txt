@@ -1,0 +1,88 @@
+
+5002-4050-PE1> show version | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R9/junos">
+    <software-information>
+        <host-name>5002-4050-PE1</host-name>
+        <product-model>mx80</product-model>
+        <product-name>mx80</product-name>
+        <junos-version>13.3R9.13</junos-version>
+        <package-information>
+            <name>junos</name>
+            <comment>JUNOS Base OS boot [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jbase</name>
+            <comment>JUNOS Base OS Software Suite [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jkernel</name>
+            <comment>JUNOS Kernel Software Suite [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jcrypto</name>
+            <comment>JUNOS Crypto Software Suite [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jpfe</name>
+            <comment>JUNOS Packet Forwarding Engine Support (MX80) [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jdocs</name>
+            <comment>JUNOS Online Documentation [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-alg</name>
+            <comment>JUNOS Services Application Level Gateways [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-jflow</name>
+            <comment>JUNOS Services Jflow Container package [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-sfw</name>
+            <comment>JUNOS Services Stateful Firewall [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-nat</name>
+            <comment>JUNOS Services NAT [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-rpm</name>
+            <comment>JUNOS Services RPM [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-crypto-base</name>
+            <comment>JUNOS Services Crypto [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ssl</name>
+            <comment>JUNOS Services SSL [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ipsec</name>
+            <comment>JUNOS Services IPSec [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jroute</name>
+            <comment>JUNOS Routing Software Suite [13.3R9.13]</comment>
+        </package-information>
+        <package-information>
+            <name>jais</name>
+            <comment>JUNOS AIS Script Suite [3.7R4.2]</comment>
+        </package-information>
+    </software-information>
+    <cli>
+        <banner></banner>
+    </cli>
+</rpc-reply>
+
+5002-4050-PE1>  show task replication | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R9/junos">
+    <task-replication-state>
+        <task-gres-state>Disabled</task-gres-state>
+        <task-re-mode>Not Applicable</task-re-mode>
+    </task-replication-state>
+    <cli>
+        <banner></banner>
+    </cli>
+</rpc-reply>

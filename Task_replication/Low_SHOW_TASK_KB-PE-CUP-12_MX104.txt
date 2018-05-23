@@ -1,0 +1,94 @@
+
+KB-PE-CUP-12> show version | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R10/junos">
+    <software-information>
+        <host-name>KB-PE-CUP-12</host-name>
+        <product-model>mx104</product-model>
+        <product-name>mx104</product-name>
+        <junos-version>13.3R10.2</junos-version>
+        <package-information>
+            <name>junos</name>
+            <comment>JUNOS Base OS boot [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jbase</name>
+            <comment>JUNOS Base OS Software Suite [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jkernel</name>
+            <comment>JUNOS Kernel Software Suite [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jcrypto</name>
+            <comment>JUNOS Crypto Software Suite [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jpfe</name>
+            <comment>JUNOS Packet Forwarding Engine Support (MX104) [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jdocs</name>
+            <comment>JUNOS Online Documentation [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-alg</name>
+            <comment>JUNOS Services Application Level Gateways [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-jflow</name>
+            <comment>JUNOS Services Jflow Container package [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-sfw</name>
+            <comment>JUNOS Services Stateful Firewall [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-nat</name>
+            <comment>JUNOS Services NAT [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-rpm</name>
+            <comment>JUNOS Services RPM [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-crypto-base</name>
+            <comment>JUNOS Services Crypto [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ssl</name>
+            <comment>JUNOS Services SSL [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jservices-ipsec</name>
+            <comment>JUNOS Services IPSec [13.3R10.2]</comment>
+        </package-information>
+        <package-information>
+            <name>jroute</name>
+            <comment>JUNOS Routing Software Suite [13.3R10.2]</comment>
+        </package-information>
+    </software-information>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>
+
+KB-PE-CUP-12>  show task replication | display xml
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/13.3R10/junos">
+    <task-replication-state>
+        <task-gres-state>Enabled</task-gres-state>
+        <task-re-mode>Master</task-re-mode>
+        <task-protocol-replication-name>BGP</task-protocol-replication-name>
+        <task-protocol-replication-state>NotStarted</task-protocol-replication-state>
+        <task-protocol-replication-name>IS-IS</task-protocol-replication-name>
+        <task-protocol-replication-state>NotStarted</task-protocol-replication-state>
+        <task-protocol-replication-name>MPLS</task-protocol-replication-name>
+        <task-protocol-replication-state>NotStarted</task-protocol-replication-state>
+        <task-protocol-replication-name>RSVP</task-protocol-replication-name>
+        <task-protocol-replication-state>NotStarted</task-protocol-replication-state>
+        <task-protocol-replication-name>LDP</task-protocol-replication-name>
+        <task-protocol-replication-state>NotStarted</task-protocol-replication-state>
+    </task-replication-state>
+    <cli>
+        <banner>{master}</banner>
+    </cli>
+</rpc-reply>

@@ -1,0 +1,6 @@
+fn_string = '''Low_SHOW_TASK_KB-PE-CUP-12_MX104.txt
+Low_SHOW_TASK_autovo-cr-1-MX240_MX240.txt
+High_SHOW_TASK_ADL-MX240-BBR-185_re0_MX240.txt
+Low_SHOW_TASK_spb-ats428-pe1-mx480_MX480.txt
+High_SHOW_TASK_KB-P2_MX960.txt
+High_SHOW_TASK_5002-4050-PE1_MX80.txt'''
