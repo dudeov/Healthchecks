@@ -1,0 +1,26 @@
+Hostname,Input Errors,Interface Drops
+High_SHOW_INT_XML_Stack-M9-PE2_MX960.txt xe-4/2/1,0,5
+High_SHOW_INT_XML_Stack-M9-PE2_MX960.txt ae10,0,5
+High_SHOW_INT_XML_M9-Stack-PE1_MX960.txt xe-11/3/0,2,92892
+High_SHOW_INT_XML_M9-Stack-PE1_MX960.txt xe-11/3/1,0,1021157
+High_SHOW_INT_XML_M9-Stack-PE1_MX960.txt ae7,0,405295
+High_SHOW_INT_XML_M9-Stack-PE1_MX960.txt xe-1/3/2,0,6392
+High_SHOW_INT_XML_M9-Stack-PE1_MX960.txt ae2,0,1021752
+High_SHOW_INT_XML_M9-Stack-PE1_MX960.txt xe-11/1/0,0,224787
+High_SHOW_INT_XML_M9-Stack-PE1_MX960.txt ge-10/0/6,0,44
+High_SHOW_INT_XML_M9-Stack-PE1_MX960.txt xe-1/0/0,0,5738
+High_SHOW_INT_XML_M9-Stack-PE1_MX960.txt xe-11/1/1,0,81542
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt ae20,33341,0
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt ge-5/0/5,0,761
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt xe-0/2/1,0,9833
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt ae19,0,1531
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt ge-1/0/3,0,50
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt ge-5/0/4,0,1127
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt ge-1/2/1,2,0
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt xe-9/3/4,33341,0
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt ae17,18009,0
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt xe-7/0/2,18009,0
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt ge-5/0/6,0,770
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt ge-1/2/6,0,791
+High_SHOW_INT_XML_msk-m9-mx960.re0_MX960.txt ge-1/3/4,0,6309
+High_SHOW_INT_XML_Stack-M9-PE1_MX960.txt xe-11/0/0,0,226324
