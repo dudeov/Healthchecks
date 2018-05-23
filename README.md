@@ -11,7 +11,7 @@ dict_east = {
 Dictionaries are located in east.py and west.py
 
 Options:
--d: east/west - from which dictionary we need to extract the list of the devices: dict_west in west.py or dict_east from east.py. That needs to be removed, only this project related
+-d: east/west/test- from which dictionary we need to extract the list of the devices: dict_west in west.py or dict_east from east.py. That needs to be removed, only this project relate; test - means one vSRX on VirtualBoxd
 -c: comma-separated list of commands in ""
 -f: filename, each device will have its own separate filename
 -a: by default the script creates a new file or overwrite the existing (if one), this option tells script to append the output to the existing file, not re-create
