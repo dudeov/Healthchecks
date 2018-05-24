@@ -4,7 +4,7 @@
 
 The function ```"parse_file(filename)"``` takes a file and clears it out from crap and creates a new temporary file called ```'tmp.xml'```. This file can be viewed in the directory.
 
-Then it opens this temp file and makes XML trees (yes, file may contain multiple XML outputs) with root ```"<rpc-reply>"``` and returns the list of these trees (list_of_xml_trees).
+Then it opens this temp file and makes XML trees (yes, file may contain multiple XML outputs) with root ```<rpc-reply>``` and returns the list of these trees (list_of_xml_trees).
 
 ```
 rpc_reply_list = parse_file(fn)
@@ -15,15 +15,14 @@ print rpc_reply_list
 [<Element rpc-reply at 0x10e634518>, <Element rpc-reply at 0x10e634488>]
 ```
 
-File contained 2 XML outputs, so we got the list with 2 XML trees (elements) with root elements "<rpc-reply>".
+File contained 2 XML outputs, so we got the list with 2 XML trees (elements) with root elements ```<rpc-reply>```.
 
 2) Parsing XML trees.
 
 These trees are like lists of special elements. We can iterate through the trees.
-Each element has 2 parameters: tag and text
+Each element has 2 parameters: tag and text.
 
-```<model-number>RE-S-1800X4-16G-S</model-number>```
-
+Element ```<model-number>RE-S-1800X4-16G-S</model-number>```:
 tag == 'model-number'
 text == 'RE-S-1800X4-16G-S'
 
