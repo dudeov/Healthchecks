@@ -1,0 +1,41 @@
+
+Host_1> show chassis routing-engine | display xml
+<rpc-reply>
+    <route-engine-information>
+        <route-engine>
+            <slot>0</slot>
+            <mastership-state>master</mastership-state>
+            <chassis-module>
+                <model-number>RE-S-1800X4-16G-S</model-number>
+            </chassis-module>
+        </route-engine>
+        <route-engine>
+            <slot>1</slot>
+            <mastership-state>backup</mastership-state>
+            <chassis-module>
+                <model-number>RE-S-1800X4-16G-S</model-number>
+            </chassis-module>
+        </route-engine>
+    </route-engine-information>
+</rpc-reply>
+
+
+Host_2> show chassis routing-engine | display xml
+<rpc-reply>
+    <route-engine-information>
+        <route-engine>
+            <slot>0</slot>
+            <mastership-state>master</mastership-state>
+            <chassis-module>
+                <model-number>RE1300</model-number>
+            </chassis-module>
+        </route-engine>
+        <route-engine>
+            <slot>1</slot>
+            <mastership-state>backup</mastership-state>
+            <chassis-module>
+                <model-number>RE1300</model-number>
+            </chassis-module>
+        </route-engine>
+    </route-engine-information>
+</rpc-reply>
