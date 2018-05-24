@@ -40,3 +40,26 @@ Connected to SMR-COD1634-23-R-SIG01
 show chassis routing-egine | display xml
 ...
 ```
+
+Note.
+
+RFC 4254
+Channel Mechanism
+
+All terminal sessions, forwarded connections, etc., are channels.
+Either side may open a channel.  Multiple channels are multiplexed into a single connection.
+
+Channels are identified by numbers at each end.  The number referring to a channel may be different on each side.  Requests to open a channel contain the sender's channel number.  Any other channel-related messages contain the recipient's channel number for the channel.
+
+ When either side wishes to open a new channel, it allocates a local number for the channel.  It then sends the following message to the other side, and includes the local channel number and initial window size in the message.
+
+ So, in one SSH channels we can open multiple SSH channels, and each channel will emulate terminal.
+
+ paramiko.SSHClient() method ".exec_command(command)" opens new channel, executes the command and reads the output.
+
+ If we send something like this:
+ ```
+ stdin, stdout, stderr = client.exec_command('start shell')
+ stdin, stdout, stderr = client.exec_command('pwd')
+ ```
+ we won't get the working directory. Because every command is executed in the independent channel with no relation to each other.
