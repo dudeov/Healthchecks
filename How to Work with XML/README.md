@@ -1,6 +1,7 @@
 **How It works**
 
 1) Creating XML trees.
+
 The function ```"parse_file(filename)"``` takes a file and clears it out from crap and creates a new temporary file called ```'tmp.xml'```. This file can be viewed in the directory.
 
 Then it opens this temp file and makes XML trees (yes, file may contain multiple XML outputs) with root ```"<rpc-reply>"``` and returns the list of these trees (list_of_xml_trees).
