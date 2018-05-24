@@ -23,8 +23,8 @@ These trees are like lists of special elements. We can iterate through the trees
 Each element has 2 parameters: tag and text.
 
 Element ```<model-number>RE-S-1800X4-16G-S</model-number>```:
-tag == 'model-number'
-text == 'RE-S-1800X4-16G-S'
+tag == 'model-number',
+text == 'RE-S-1800X4-16G-S'.
 
 Example:
 ```
