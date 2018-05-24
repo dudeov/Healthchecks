@@ -63,9 +63,9 @@ Channels are identified by numbers at each end.  The number referring to a chann
 
  When either side wishes to open a new channel, it allocates a local number for the channel.  It then sends the following message to the other side, and includes the local channel number and initial window size in the message.
 
- So, in one SSH channels we can open multiple SSH channels, and each channel will emulate terminal.
+ So, in one SSH channels we can open multiple SSH channels and each channel will emulate the terminal.
 
- paramiko.SSHClient() method ".exec_command(command)" opens new channel, executes the command and reads the output.
+ paramiko.SSHClient() method ".exec_command(command)" opens new channel every time, executes the command and reads the output.
 
  If we send something like this:
  ```
