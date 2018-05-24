@@ -52,7 +52,7 @@ show chassis routing-egine | display xml
 ...
 ```
 
-**Note. RFC 4254**
+**Note. RFC 4254 (The Secure Shell (SSH) Connection Protocol)**
 
 *Channel Mechanism*
 
