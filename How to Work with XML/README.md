@@ -21,7 +21,7 @@ File contained 2 XML outputs, so we got the list with 2 XML trees (elements) wit
 These trees are like lists of special elements. We can iterate through the trees.
 Each element has 2 parameters: tag and text
 
-<model-number>RE-S-1800X4-16G-S</model-number>
+```<model-number>RE-S-1800X4-16G-S</model-number>```
 
 tag == 'model-number'
 text == 'RE-S-1800X4-16G-S'
