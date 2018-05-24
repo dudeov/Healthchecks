@@ -53,6 +53,7 @@ show chassis routing-egine | display xml
 ```
 
 **Note. RFC 4254**
+
 *Channel Mechanism*
 
 All terminal sessions, forwarded connections, etc., are channels.
