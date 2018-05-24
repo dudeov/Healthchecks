@@ -26,7 +26,8 @@ Element ```<model-number>RE-S-1800X4-16G-S</model-number>```:
 tag == 'model-number',
 text == 'RE-S-1800X4-16G-S'.
 
-Example:
+Example: parsing file "sh_re_XML.txt"
+
 ```
 ###################################################################################################
 def parse_xml_tree(rpc_reply_list, fn):
