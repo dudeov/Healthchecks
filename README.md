@@ -1,3 +1,14 @@
+**About the repo**
+```
+mbpr:Healthchecks_git alex.chuvakov$ pwd
+/Users/alex.chuvakov/PycharmProjects/Healthchecks/Healthchecks_git
+mbpr:Healthchecks_git alex.chuvakov$ git remote -v
+health_repo	https://github.com/dudeov/Healthchecks.git (fetch)
+health_repo	https://github.com/dudeov/Healthchecks.git (push)
+```
+
+**About ssh-v4.py**
+
 python ssh-v4.py takes devices from dictionaries like:
 ```
 dict_east = {
