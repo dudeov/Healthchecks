@@ -7,9 +7,9 @@ health_repo	https://github.com/dudeov/Healthchecks.git (fetch)
 health_repo	https://github.com/dudeov/Healthchecks.git (push)
 ```
 
-**About ssh-v4.py**
+**About ```ssh-v4.py```**
 
-python ssh-v4.py takes devices from dictionaries like:
+Script ```ssh-v4.py``` takes devices from dictionaries like:
 ```
 dict_east = {
 'ADL-MX240-BBR-184_re0': ('10.23.255.184','High','MX240'),
@@ -52,10 +52,8 @@ show chassis routing-egine | display xml
 ...
 ```
 
-Note.
-
-RFC 4254
-Channel Mechanism
+**Note. RFC 4254**
+*Channel Mechanism*
 
 All terminal sessions, forwarded connections, etc., are channels.
 Either side may open a channel.  Multiple channels are multiplexed into a single connection.
