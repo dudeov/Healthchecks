@@ -2,7 +2,7 @@
 Status is needed, because Juniper shows optic levels even for interfaces which are down or even admin down.
 
 **Instruction:**
-1) Collect ```"show interfaces terse,show interfaces extensive | display xml"``` from each device and put them into a single file per device
+1) Collect ```"show interfaces terse,show interfaces diagnostics optics | display xml"``` from each device and put them into a single file per device
 2) Put all filenames in fn_l.py:
 ```
 fn_string = '''High_SHOW_OPTICS_MX-PaCo-2-NiiS_MX960.txt
