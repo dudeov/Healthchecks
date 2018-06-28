@@ -29,3 +29,15 @@ Error!!!
 Problems with scp to 10.179.0.95, Check the address and the password. Next device...
 NetworkGod:scripts alex.chuvakov$
 ```
+# Note
+
+How to run the script manually:
+```
+start shell
+su
+cd /var/tmp
+mkdir script
+cd script
+# Paste the script here, under /var/tmp/script
+To start: sh script.sh > /var/tmp/script/Script-output.txt &
+```
