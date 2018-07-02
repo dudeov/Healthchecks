@@ -1,4 +1,24 @@
-# How it works:
+# Note. Pexpect tricks
+
+```
+i = p.expect(['.D-Link.','login:','Username:'])
+if i == 0:
+    print 'D-Link detected'
+    p.expect(['login:','UserName:'])
+    p.sendline(login)
+    p.expect(['Password:','PassWord'])
+    ...
+elif i == 1:
+    print 'Cisco detected'
+    ...
+elif i == 2:
+    ...
+
+
+p.interact()    ## интерактивная консоль - отдаем управление пользователю
+```
+
+# How the script works:
 
 Run the script:
 ```
@@ -31,7 +51,7 @@ NetworkGod:scripts alex.chuvakov$
 ```
 # Note
 
-How to run the script manually:
+How to run the shell script manually:
 ```
 start shell
 su
