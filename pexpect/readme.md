@@ -1,13 +1,22 @@
 # Note. Pexpect tricks
 
 ```
+
+#### Logging
+with pexpect.spawn('some string') as child:
+    try:
+        child.logfile = open(pexpect_logfile, "a")
+    except Exception as e:
+        child.logfile = None
+        
+
 #### Expect multiple parameters
-i = p.expect(['.D-Link.','login:','Username:'])     ## Expect a match from a list of strings
+i = child.expect(['.D-Link.','login:','Username:'])     ## Expect a match from a list of strings
 if i == 0:
     print 'D-Link detected'
-    p.expect(['login:','UserName:'])
-    p.sendline(login)
-    p.expect(['Password:','PassWord'])
+    child.expect(['login:','UserName:'])
+    child.sendline(login)
+    child.expect(['Password:','PassWord'])
     ...
 elif i == 1:
     print 'Cisco detected'
@@ -16,15 +25,8 @@ elif i == 2:
     ...
 
 #### Virtual console
-p.interact()    ## интерактивная консоль - отдаем управление пользователю
+child.interact()    ## интерактивная консоль - отдаем управление пользователю
 
-
-#### Logging
-with pexpect.spawn('some string') as child:
-    try:
-        child.logfile = open(pexpect_logfile, "a")
-    except Exception as e:
-        child.logfile = None
             
 #### File copy (100%)
 with pexpect.spawn('scp file.txt user@host:/var/tmp/file.txt') as child:
