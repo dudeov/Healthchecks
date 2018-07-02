@@ -1,7 +1,8 @@
 # Note. Pexpect tricks
 
 ```
-i = p.expect(['.D-Link.','login:','Username:'])
+#### Expect multiple parameters
+i = p.expect(['.D-Link.','login:','Username:'])     ## Expect a match from a list of strings
 if i == 0:
     print 'D-Link detected'
     p.expect(['login:','UserName:'])
@@ -14,8 +15,30 @@ elif i == 1:
 elif i == 2:
     ...
 
-
+#### Virtual console
 p.interact()    ## интерактивная консоль - отдаем управление пользователю
+
+
+#### Logging
+with pexpect.spawn('some string') as child:
+    try:
+        child.logfile = open(pexpect_logfile, "a")
+    except Exception as e:
+        child.logfile = None
+            
+#### File copy (100%)
+with pexpect.spawn('scp file.txt user@host:/var/tmp/file.txt') as child:
+    try:
+        child.expect('assword:', timeout=5)
+        child.sendline(dev_pass)
+        try:
+            child.expect(pexpect.EOF, timeout=30)
+            out = clean_pexpect(child.before)
+            print(out)
+            if '100%' in out:
+                return True
+            else:
+            ...
 ```
 
 # How the script works:
