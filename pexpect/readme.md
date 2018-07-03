@@ -1,7 +1,15 @@
 # Note. Pexpect tricks
 
 ```
+#### Terminal length and width
 
+with pexpect.spawn(ssh_string, dimensions=(200,200)) as child:
+
+Without that I was not able to get a proper screen width, so grep didn't work. The output was:
+root      1187  0.0  0.0  1072   336  p0- S     4:01PM   0:00.14 sh Recovery-sc
+
+and full "grep -v Recovery-scriptV15-Active_v2.sh" didn't work, because Recovery-scriptV15-Active_v2.sh != Recovery-sc
+                
 #### Logging
 with pexpect.spawn('some string') as child:
     try:
