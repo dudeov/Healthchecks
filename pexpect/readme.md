@@ -2,6 +2,8 @@
 
 ```
 #### Terminal length and width
+The dimensions attribute specifies the size of the pseudo-terminal as seen by the subprocess, and is specified
+as a two-entry tuple (rows, columns). If this is unspecified, the defaults in ptyprocess will apply.
 
 with pexpect.spawn(ssh_string, dimensions=(200,200)) as child:
 
