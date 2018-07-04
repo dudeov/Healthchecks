@@ -3,20 +3,17 @@
 import pexpect
 import getpass
 import re
-import time
 from devices import *
 
 def upload(dev_uname, dev_pass, dev_address, f_name):
     scp_string = 'scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no ' + f_name + ' ' + dev_uname + '@' + dev_address + ':/var/tmp/' + f_name
-    #print(scp_string)
-    with pexpect.spawn(scp_string) as child:
+    print(scp_string)
+    with pexpect.spawn(scp_string, dimensions=(200,200)) as child:
         try:
             child.logfile = open(pexpect_logfile, "a")
         except Exception as e:
             child.logfile = None
 
-        child.delaybeforesend = .0250
-        child.setwinsize(400, 400)
         try:
             child.expect('assword:', timeout=5)
             child.sendline(dev_pass)
@@ -61,7 +58,7 @@ def all_stuff(dev_uname, dev_pass, dev_address_list, f_name = 'Recovery-scriptV1
 
 
         ssh_string = 'ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no ' + dev_uname + '@' + dev_address
-        with pexpect.spawn(ssh_string) as child:
+        with pexpect.spawn(ssh_string, dimensions=(200,200)) as child:
             try:
                 child.logfile = open(pexpect_logfile, "a")
             except Exception as e:
@@ -153,23 +150,8 @@ def all_stuff(dev_uname, dev_pass, dev_address_list, f_name = 'Recovery-scriptV1
 
             # Checking if the script has already been started
             try:
-                grep_str = 'ps aux | grep -v grep | grep ' + f_name[:7]
+                grep_str = 'ps aux | grep -v grep | grep ' + f_name
                 child.sendline(grep_str)
-                """
-                Sending this:
-                ps aux | grep -v grep | grep Recover
-                
-                the output is:
-                root      1187  0.0  0.0  1072   336  p0- S     4:01PM   0:00.14 sh Recovery-sc
-                vSRX throttles letters at the end of line (pexpect)
-                
-                Full grep -v Recovery-scriptV15-Active_v2.sh
-                doesn't work, because Recovery-scriptV15-Active_v2.sh != Recovery-sc
-                
-                Looks like either vSRX or pexpect have some limitations on length of line
-                HZ
-                """
-                time.sleep(2)
                 child.expect('root ', timeout=5)
                 out1 = clean_pexpect(child.before) + clean_pexpect(child.after)
                 child.sendline('\n')
