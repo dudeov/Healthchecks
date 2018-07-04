@@ -37,6 +37,15 @@ elif i == 2:
 #### Virtual console
 child.interact()    ## интерактивная консоль - отдаем управление пользователю
 
+
+#### Looging what was going on in the terminal - all inputs and outputs
+
+with pexpect.spawn(scp_string, dimensions=(200,200)) as child:
+    try:
+        # Open mode a+b(bytes), because pexpect writes in bytes
+        child.logfile = open(p_logfile, "ab")
+    except Exception as e:
+        child.logfile = None
             
 #### File copy (100%)
 with pexpect.spawn('scp file.txt user@host:/var/tmp/file.txt') as child:
