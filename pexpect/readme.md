@@ -64,6 +64,8 @@ with pexpect.spawn('scp file.txt user@host:/var/tmp/file.txt') as child:
 
 # How the script works:
 
+*Create a file 'list.txt' and put IP address there one on a line
+
 Run the script:
 ```
 $ python copy_script.py
